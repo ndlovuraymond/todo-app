@@ -21,10 +21,24 @@ struct AddTaskView: View {
                 .padding(.horizontal)
                 .background(Color.blue)
                 .foregroundColor(.white)
-
+            
+            DatePicker("Deadline", selection: $taskInput.deadline, displayedComponents: .date)
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(.white)
+            
+            Picker("Priority", selection: $taskInput.priority) {
+                Text("Low").tag("Low")
+                Text("High").tag("High")
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            
             Button(action: {
                 if !taskInput.name.isEmpty {
-                    let task = ContentView.Task(name: taskInput.name, description: taskInput.description, isCompleted: taskInput.isCompleted)
+                    let task = ContentView.Task(name: taskInput.name, description: taskInput.description, isCompleted: taskInput.isCompleted, deadline: taskInput.deadline, priority: taskInput.priority)
                     addTask(task)
                 } else {
                     showingAlert = true
@@ -48,4 +62,3 @@ struct AddTaskView: View {
         .foregroundColor(.white)
     }
 }
-

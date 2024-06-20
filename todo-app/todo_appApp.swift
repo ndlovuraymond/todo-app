@@ -14,7 +14,7 @@ struct todo_appApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ParentView()
                 .environmentObject(taskData)
         }
     }

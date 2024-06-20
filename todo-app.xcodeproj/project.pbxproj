@@ -19,6 +19,11 @@
 		6C0803ED2BBB029F0034CDFE /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0803EC2BBB029F0034CDFE /* TaskRow.swift */; };
 		6C0803EF2BBB02CF0034CDFE /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0803EE2BBB02CF0034CDFE /* TaskDetailView.swift */; };
 		6C0803F12BBF5B0D0034CDFE /* CompletedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0803F02BBF5B0D0034CDFE /* CompletedTasks.swift */; };
+		6CB5C3D62C0CDF3C0008F3DB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB5C3D52C0CDF3C0008F3DB /* LoadingView.swift */; };
+		6CB5C3D82C0CEB230008F3DB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB5C3D72C0CEB230008F3DB /* SignInView.swift */; };
+		6CB5C3DA2C0CEB730008F3DB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB5C3D92C0CEB730008F3DB /* SignUpView.swift */; };
+		6CB5C3DC2C0CEBE20008F3DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB5C3DB2C0CEBE20008F3DB /* User.swift */; };
+		6CB5C3DE2C17857D0008F3DB /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB5C3DD2C17857D0008F3DB /* ParentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		6C0803EC2BBB029F0034CDFE /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		6C0803EE2BBB02CF0034CDFE /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		6C0803F02BBF5B0D0034CDFE /* CompletedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTasks.swift; sourceTree = "<group>"; };
+		6CB5C3D52C0CDF3C0008F3DB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		6CB5C3D72C0CEB230008F3DB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		6CB5C3D92C0CEB730008F3DB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		6CB5C3DB2C0CEBE20008F3DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6CB5C3DD2C17857D0008F3DB /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +118,12 @@
 				6C0803BD2BBA19160034CDFE /* todo_appApp.swift */,
 				6C0803BF2BBA19160034CDFE /* ContentView.swift */,
 				6C0803E82BBB02390034CDFE /* EmptyStateView.swift */,
+				6CB5C3D52C0CDF3C0008F3DB /* LoadingView.swift */,
+				6CB5C3DD2C17857D0008F3DB /* ParentView.swift */,
 				6C0803F02BBF5B0D0034CDFE /* CompletedTasks.swift */,
+				6CB5C3D92C0CEB730008F3DB /* SignUpView.swift */,
+				6CB5C3D72C0CEB230008F3DB /* SignInView.swift */,
+				6CB5C3DB2C0CEBE20008F3DB /* User.swift */,
 				6C0803EA2BBB02660034CDFE /* AddTaskView.swift */,
 				6C0803EC2BBB029F0034CDFE /* TaskRow.swift */,
 				6C0803EE2BBB02CF0034CDFE /* TaskDetailView.swift */,
@@ -274,13 +289,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CB5C3D82C0CEB230008F3DB /* SignInView.swift in Sources */,
 				6C0803ED2BBB029F0034CDFE /* TaskRow.swift in Sources */,
 				6C0803E92BBB02390034CDFE /* EmptyStateView.swift in Sources */,
 				6C0803EF2BBB02CF0034CDFE /* TaskDetailView.swift in Sources */,
+				6CB5C3DE2C17857D0008F3DB /* ParentView.swift in Sources */,
 				6C0803C02BBA19160034CDFE /* ContentView.swift in Sources */,
 				6C0803F12BBF5B0D0034CDFE /* CompletedTasks.swift in Sources */,
+				6CB5C3DA2C0CEB730008F3DB /* SignUpView.swift in Sources */,
+				6CB5C3D62C0CDF3C0008F3DB /* LoadingView.swift in Sources */,
 				6C0803BE2BBA19160034CDFE /* todo_appApp.swift in Sources */,
 				6C0803EB2BBB02660034CDFE /* AddTaskView.swift in Sources */,
+				6CB5C3DC2C0CEBE20008F3DB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

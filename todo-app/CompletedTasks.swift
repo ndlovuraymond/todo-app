@@ -13,7 +13,7 @@ struct CompletedTasks: View {
     var toggleTaskCompletion: (ContentView.Task) -> Void
     
     var body: some View {
-        var completedTasks = taskData.tasks.filter{ $0.isCompleted}
+        let completedTasks = taskData.tasks.filter{ $0.isCompleted}
         NavigationView {
             VStack {
                 List {

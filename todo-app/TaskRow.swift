@@ -12,7 +12,7 @@ struct TaskRow: View {
             }) {
                 Image(systemName: task.isCompleted ? "checkmark.square" : "square")
                     .foregroundColor(task.isCompleted ? .green : .gray)
-            }
+            }.buttonStyle(BorderlessButtonStyle())
 
             VStack(alignment: .leading) {
                 Text(task.name)
@@ -24,7 +24,7 @@ struct TaskRow: View {
                 onDelete()
             }) {
                 Image(systemName: "trash")
-            }
+            }.buttonStyle(BorderlessButtonStyle())
         }
     }
 }
